@@ -1,0 +1,82 @@
+
+header, title, author {
+    display: block;
+}
+
+title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+author {
+    text-align: right;
+}
+
+
+dic {
+    display: block;
+    margin: 50px;
+}
+
+entry {
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: dotted 1px #999999;
+}
+
+def {
+    display: block;
+    font-style: italic;
+}
+
+lang:before {
+    content: attr(lang);
+    display: block;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-color: #000099;
+}
+
+lang {
+    display: block;
+    margin-bottom: 3px;
+}
+
+word + word:before {
+    content: " | ";
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+source, src {
+    display: block;
+    font-size: small;
+    color: #aaaaaa;
+}
+
+example, sense {
+    margin-left: 50px;
+    display: block;
+}
+
+def:before {
+    content: "definition: ";
+    font-variant: small-caps;
+    color: #333333;
+}
+
+ex:before {
+    content: "example: ";
+    font-variant: small-caps;
+    color: #333333;
+}
+
+source:before, src:before {
+    content: "(";
+}
+source:after, src:after {
+    content: ")";
+}
+
+
